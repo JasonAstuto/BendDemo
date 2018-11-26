@@ -1,0 +1,19 @@
+{
+  "Configurations": [
+    {
+      "studyId": "Studoy01",
+      "sortColumn": "UNKNOWN",
+      "direction": "UNKNOWN"
+    },
+    {
+      "studyId": "Study02",
+      "sortColumn": "UNKNOWN",
+      "direction": "UNKNOWN"
+    },
+    {
+      "studyId": "Study03",
+      "sortColumn": "UNKNOWN",
+      "direction": "UNKNOWN"
+    }
+  ]
+}

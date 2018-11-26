@@ -1,0 +1,13 @@
+<h1>Project Studies</h1>
+
+<p *ngIf="!studies"><em>Loading...</em></p>
+
+<ul class="studies">
+  <li *ngFor="let study of studies"
+      [class.selected]="study === selectedStudy"
+      (click)="onSelect(study)">
+    <span class="badge">{{study.id}}</span>{{study.name}} -- {{study.description}} <span class="star">{{study.sortColumnName}}</span><span class="star">{{study.sortDirection}}</span>
+  </li>
+</ul>
+
+<app-study-detail [study]="selectedStudy"></app-study-detail>  
