@@ -3,5 +3,5 @@ export class Study {
   name: string;
   description: string;
   sortColumnName: string;
-  sortDirection; string;
+  sortDirection: string;
 }
