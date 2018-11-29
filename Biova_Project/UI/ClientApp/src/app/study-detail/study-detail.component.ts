@@ -67,6 +67,10 @@ export class StudyDetailComponent implements OnInit {
     });
   }
 
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
   ngOnInit(): void {
     this.dataSource.sort = this.sort;
   }

@@ -24,6 +24,8 @@ namespace API
             services.AddDbContext<StudyDbContext>(options =>  options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
             services.AddDbContext<ExperimentDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
 
+            services.AddDbContext<ExperimentRunDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
+
             //Danger! This allows any javascript to call any api method...not a best practice
             services.AddCors(options =>
             {

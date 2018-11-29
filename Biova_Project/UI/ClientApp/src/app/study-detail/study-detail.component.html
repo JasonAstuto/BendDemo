@@ -4,6 +4,10 @@
   <h2>Study Experiments</h2>
   <h4>Collection of Experiments for {{study.name}}</h4>
   <div class="mat-elevation-z8">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+
     <table mat-table [dataSource]="experiments" matSort (matSortChange)="sortData($event)">
 
       <!-- ID Column -->
